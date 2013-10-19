@@ -90,10 +90,14 @@ pwhite{
 }
 
 /*navbar*/
+#nav{
+  position: fixed;
+}
 .nav-collapse {
     height:auto;
     width: 100%;  
     background-color: #f2f0f0;
+
 }
 
 .nav-collapse ul {
