@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 	<head>
-		<!-- utf-8 es un formato de codificacion de caracteres UNICODE. Al poner esto el browser sabra como pintar letras y caracteres raros como la "ñ"-->
+		<!-- utf-8 is an unicode format. With this there won't be any problems displyaing weird characters like the ñ-->
 		<meta charset="utf-8"> 
 		
-		<!-- titulo y meta descripcion. El titulo sale en el tab del brower mas cosas como la descripcion son mas usadas para SEO y SEM.-->
+		<!-- title and meta description. The 1st one will be displayed in the browser tab-->
         <title>My Startup team!</title>
-        <meta name="description" content="My business is...">
         <meta name="viewport" content="width=device-width">
 
-        <!-- El favicon es la pequeña imagen que uno ve en los tabs de los browsers -->
+        <!-- The favicon is the little image at the side of the browser tab -->
         <link rel="shortcut icon" href="favicon.png">
 
-        <!-- Aca importamos nuestros estilos -->
+        <!-- Importing our styles -->
         <link rel="stylesheet" href="css/normalize.css">  
         <link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
         <link rel="stylesheet" href="css/main.css">
-        <!-- Google web fonts es una excelente herramienta para utilizar diferentes tipografias sin tenerlas en "fisico".-->
+        <!-- Google web fonts is a great tool to "inject" fonts dynamically-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> 
 
-        <!-- No tiene sentido reinventar la rueda. En muchos casos es bueno buscar plugins que nos sirvan para lo que queremos lograr.
-    	Especialmente cuando estamos empezando.-->
-        <script src="js/responsive-nav.js"></script> <!-- Este es para tener un navbar responsive. Mas info en responsive-nav.com -->    
+        <!-- Don't reinvent the wheel. There are tons of useful JS plugins-->
+        <script src="js/responsive-nav.js"></script>    
 
 	</head>
 
 	<body>
-		<!-- Este es nuestro navbar. Utilizando el plugin responsive-nav-->
+		<!-- Our navbar!-->
 		<nav class="nav-collapse" id="nav">
           <ul>
             <li><a href="#home">Home</a></li>
@@ -34,12 +32,11 @@
           </ul>
         </nav>
 
-        
+        <!-- This is for our navbar to navigate to different part of the page. <a name="x"></a> and there must be a href="#x" somewhere-->
         <a name="home"></a>
         <div  id="sections" class="sec1">
 	        <div id="pattern">	
 	        	<div class="container group text-center">
-	        		
 	        		<h1 class="white">My Badass Startup!</h1>
 	        		<hr>
 	        		<h2 class="white"> I don't wanna brag but...we are kinda awesome.</h2>
@@ -113,7 +110,7 @@
 	</body>
 
 
-	<!-- -->
+	<!-- JQuery is the biggest JS library. Lots of JS user use it. Our plugin needs it.-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<!-- Requirido para que el plugin funcione bien -->
         <script>

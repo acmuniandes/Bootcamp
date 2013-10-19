@@ -5,15 +5,17 @@
  * Creado por Jose Rafael Striedinger.
  */
 
+/* important! Sometimes input tag go outside of the div in small sizes. We can fix it by always making the input have a mix-width*/
 button,
 input,
 select,
 textarea {
     color: #222;
-    font-size: 1.6em;
+    font-size: 16px;
     max-width: 90%;
     resize: none;
 }
+/*Remember margin and padding manages space around elements. One for outside (margin) and the other for the inside (padding)*/
 input{padding: 5px; margin-top:5px;}
 img.centered {
     display: block;
@@ -21,22 +23,21 @@ img.centered {
     margin-right: auto;     
 }
 
+/*Our main properties!*/
 body {
-	/* We use Golden Ratio. With this our base type is 10px*/
-	font-size: 62.5%;
-    line-height:inherit;
-	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-size: 100%;
+  line-height:inherit;
+	font-family: 'Open Sans', Helvetica, sans-serif; /*Open Sans is added dynamically thanks to Google Webfonts*/
 	color: #1a1a1a;
-		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-		-webkit-text-size-adjust: 100%;
 }
 footer{
   background-color: #f2f0f0;
-  font-size: 1em;
-  padding: 0.5em;
+  font-size: 10px;
+  padding: 5px;
   text-align: center;
   text-transform: uppercase;
 }
+/*Nice looking hr! Want another? Just google it, you'll find a lot.*/
 hr {
     border: 0;
     height: 1px;
@@ -45,10 +46,11 @@ hr {
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     display: block;
-    margin: 2em 0;
+    margin: 20px 0;
 }
 
-
+/*Thanks to FontSquirrel.com webfont generator we can get this code. This makes all fonts visible in every browser in the world!
+There are many kind of font types and some browsers have their preferences. Wanna look for cool fonts? go to dafont.con or the fontsquirrel.com*/
 @font-face {
     font-family: 'lobster_twobold';
     src: url('fonts/lobstertwo-bold-webfont.eot');
@@ -60,8 +62,9 @@ hr {
     font-style: normal;
 }
 
+/* The style of our gree buttons!*/
 button{
-  font-size: 1.8em; 
+  font-size: 18px; 
   margin: 0;
   border: 0;
   padding: 10px 14px; 
@@ -69,53 +72,55 @@ button{
   text-align: center;  
   text-decoration: none;
 }
+/* These are used for when the mouse of over a button or when a button is active */
 button:hover, button:focus, button:active{ background-color: #50a985;}
 
 /* Custom Typography	*/
 h1,h2 {
 	font-family: 'lobster_twobold',Impact;
-	font-weight:normal;
+	font-weight:normal; /* Just to be sure! */
 	color: #181818;
-	margin:auto;
+	margin:auto; /*auto because it depende on the size of the font. Let the browser define the margin.*/
 }
-h1{font-size: 9em;}
-h2{font-size: 4.2em;}
-p {	font-size: 1.8em; /* 10 x 1.6 = 16 */  font-weight: 300;}
+h1{font-size: 90px;}
+h2{font-size: 42px;}
+p {	font-size: 18px;  font-weight: 300;}
 .white{color:white;}
 
 /*navbar*/
+/* Becuase we are using a JS plugin, we must use the tags they suggest for the plugin to work properly*/
 .nav-collapse {
-    height:auto;
-    width: 100%;  
+    height:auto; 
+    width: 100%; /*So the navbar occupies all the page*/ 
     background-color: #f2f0f0;
 }
+/*ul stand for unorganized list*/
 .nav-collapse ul {
     text-align:center;  
     padding: 0;  
     margin: 0 auto; 
 }
-
+/* li stands for list item*/
 .nav-collapse li {
   display: inline;  
-    float: none; 
+    float: none; /*with this the items will be centered. You can try other stuff like float:left*/
 }  
+/*a is the tag for links.*/
 .nav-collapse li a {  
     display:inline-block;
-    font-size: 2em;
+    font-size: 20px;
     float: none;
     padding: 12px 30px 15px;
     color: #1a1a1a;
     text-decoration: none;   
 }
-.nav-collapse li a:hover, li a:focus {  
+.nav-collapse li a:hover, 
+.nav-collapse li a:focus,
+.nav-collapse li a:active {  
     text-decoration: none;
     background-color: #dddcdc;
 } 
-.nav-collapse li a:active {
-    background-color: #dddcdc;
-    text-decoration: none;
-    border-bottom: 0px;
-}
+/* This is the little square we see then the navbar is in "responsive mode"*/
 .nav-toggle {
   width: 50px;
   height: 50px;
@@ -130,53 +135,26 @@ p {	font-size: 1.8em; /* 10 x 1.6 = 16 */  font-weight: 300;}
     background-repeat: no-repeat;
     background-position: center center;
     width:100%;
+    /*Prefix! Different browser have different engines, that's why for some CSS3 we need these*/
     -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
+      -moz-background-size: cover; /*Mozilla*/
+      -o-background-size: cover; /*opera*/
       background-size: cover;     
-   
 }
-
 .sec1{  background:url(sections/bg1.jpg); }
-.sec2{  padding: 10em 0em 5em;  background:url(sections/bg3.jpg); }
+.sec2{  padding: 100px 0px 5px;  background:url(sections/bg3.jpg); }
 .sec3{  background:url(sections/bg4.jpg); }
+/*A little effect on background. A pattern (this time a black-dot pattern) to but in any background. Want other patterns? Go to patternify.com*/
 #pattern{
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=)repeat;
     width: 100%;
     height: 100%;
-
 }
-.sec1 #pattern{padding: 15em 0em 2em;}
-.sec3 #pattern{padding: 20em 0em 20em;}
+.sec1 #pattern{padding: 150px 0px 20px;}
+.sec3 #pattern{padding: 200px 0px 200px;}
 
+/*When we use RGBA code for colors we can set the alpha value, which manages the transparency. */
 .layer{background-color:rgba(242,240,240,.5);width: 100%;}
-
-/* "STOP! Responsive time!"*/
-@media only screen and (max-width: 40em) 
-{
-    .nav-collapse,
-    .nav-collapse ul {
-      list-style: none;
-      width: 100%;
-      float: left;
-      background-color: #f2f0f0;
-
-    }
-    .nav-collapse li a{
-      width: 100%;
-      padding: 0px 0px 0px;
-      font-size: 1.4em;
-    }  
-     .nav-collapse li a:hover, nav li a:focus {  
-        border-top:none;
-    } 
-    .nav-collapse li a:active {
-        background-color: #dddcdc;
-        text-decoration: none;
-        border-bottom: 0px;
-    }
-}
-
 
 /* GRID */
 .text-center{ text-align: center;} 
@@ -210,10 +188,34 @@ p {	font-size: 1.8em; /* 10 x 1.6 = 16 */  font-weight: 300;}
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 479px) {
+    .container{width: 100%;}
+
     .col { width: 95%;}
     .offset1{padding-left: 0%}
     .offset2{padding-left: 0%}
     .container { width: 100%; }
+
+    .nav-collapse,
+    .nav-collapse ul {
+      list-style: none;
+      width: 100%;
+      float: left;
+      background-color: #f2f0f0;
+
+    }
+    .nav-collapse li a{
+      width: 100%;
+      padding: 0px 0px 0px;
+      font-size: 14px;
+    }  
+     .nav-collapse li a:hover, nav li a:focus {  
+        border-top:none;
+    } 
+    .nav-collapse li a:active {
+        background-color: #dddcdc;
+        text-decoration: none;
+        border-bottom: 0px;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
         .container{ width: 768px; }
