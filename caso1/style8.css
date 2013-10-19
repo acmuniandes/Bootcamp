@@ -1,0 +1,67 @@
+body {
+	background-image: url("fondo.png");
+	background-attachment:fixed;
+	color: white;
+	font-family: helvetica;	
+}
+	
+h1 {
+	font-size: 70px;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+header p {
+	font-size: 22px;
+}
+
+input {
+	border: 0;
+	padding: 10px;
+	font-size: 18px;
+}
+
+input[type="submit"] {
+	background: tomato;
+	color: white;
+}
+
+img {
+	border: 7px solid;
+	border-radius: 110px;
+	width: 200px;
+	margin: 40px 0px 0px 0px;
+}
+
+a {
+	color: white;
+}
+
+header {
+	text-align: center;
+}
+
+	article {
+	max-width: 500px;
+	padding: 30px;
+	margin: 0 auto;
+	margin-top: 60px;
+	color: Teal;
+	font-size: 14px;
+				background: white;
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 18px;
+	}
+}

@@ -18,73 +18,72 @@
         <!-- Google web fonts es una excelente herramienta para utilizar diferentes tipografias sin tenerlas en "fisico".-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> 
 
-        <!-- En many cases we can use JS plugins instead of working on new code. Important advise for beginners-->
-        <script src="js/responsive-nav.js"></script>     
+        <!-- No tiene sentido reinventar la rueda. En muchos casos es bueno buscar plugins que nos sirvan para lo que queremos lograr.
+    	Especialmente cuando estamos empezando.-->
+        <script src="js/responsive-nav.js"></script> <!-- Este es para tener un navbar responsive. Mas info en responsive-nav.com -->    
+
 	</head>
+
 	<body>
-		<!-- Our navigation vbar. using responsive-nav plugin-->
+		<!-- Este es nuestro navbar. Utilizando el plugin responsive-nav-->
 		<nav class="nav-collapse">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
-        </nav>       
+        </nav>
+
+        
 
         <div  id="sections" class="sec1">
-	        <div id="pattern">	
+	        <div id="pattern" style="padding: 15em 0em 2em">	
 	        	<div class="container group text-center">
-	        		<h1 class="white">My Badass Startup!</h1>
+	        		
+	        		<h1 style="color:white">My Badass Startup!</h1>
 	        		<hr>
-	        		<h2 class="white"> I don't wanna brag but...we are kinda awesome.</h2>
+	        		<h2 style="color:white"> I don't wanna brag but...we are kinda awesome.</h2>
 	        	</div>
-                
 	        	<div class="container group text-center">
 	        		<br>
-                    
 					<div class="col one">
 						<img class="centered" src="img/tv.png">
-						<p class="white"><strong>We watch a lot of TV.</strong></p>
+						<pwhite><strong>We watch a lot of TV.</strong></pwhite>
 					</div>
-                    
-					<div class="col one">
+					<div class="col one text">
 						<img class="centered" src="img/food.png">
-						<p class="white"><strong>We eat food.</strong></p>
+						<pwhite><strong>We eat food.</strong></pwhite>
 					</div>
-                    
 					<div class="col one">
 						<img class="centered" src="img/money.png">
-						<p class="white"><strong>We like money.</strong></p>
+						<pwhite><strong>We like money.</strong></pwhite>
 					</div>
 				</div>
-                
 			</div>
         </div>
 
         <div  id="sections" class="sec2">
         	<div class="container group text-center">
+        		
         		<h1>The Team</h1>
         		<hr>
         		<h2> Da awesome people.</h2>
         	</div>
-            
         	<div class="container group text-center">
         		<br>
 				<div class="col one offset1">
 					<img class="centered" src="img/bender.png">
 					<p><em>I'll make my own Startup. With blackjack and hookers!</em></pwhite>
 				</div>
+				
 			</div>
-            
         </div>
-        
         <div  id="sections" class="sec3">
-        	<div id="pattern">
+        	<div id="pattern" style="padding: 20em 0em 20em">
         		<div class="container text-center">
         			<h2>Contact Us</h2>
         		</div>
-                
-	        	<div class="group layer">
+	        	<div class="group full-width" style="background-color:rgba(242,240,240,.5);">
 	        		<form action="#" method="get">
 		        		<div class="container group text-center">
 		        			<div class="col one">
@@ -100,16 +99,16 @@
 		        		</div>
 	        		</form>        		
 	        	</div>
-                
 			</div>
         </div>
-        <footer>bootcamp - Introducción a HTML5 y CSS3<br>
-        <a href="http://facebook.com/acmuniandes">acm uniandes</a>   -   <a href="http://facebook.com/comunidadget.com">GET</a><br>
-        universidad de los andes, bogotÁ - colombia</footer>
+
+
 	</body>
-	<!-- Adding JQuery-->
+
+
+	<!-- -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<!-- Required for Responsive-nav plugin to work properly -->
+	<!-- Requirido para que el plugin funcione bien -->
         <script>
 		  var navigation = responsiveNav(".nav-collapse", {
 			animate: true,        // Boolean: Use CSS3 transitions, true or false
