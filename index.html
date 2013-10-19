@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+	<head>
+		<!-- utf-8 es un formato de codificacion de caracteres UNICODE. Al poner esto el browser sabra como pintar letras y caracteres raros como la "ñ"-->
+		<meta charset="utf-8"> 
+		
+		<!-- titulo y meta descripcion. El titulo sale en el tab del brower mas cosas como la descripcion son mas usadas para SEO y SEM.-->
+        <title>My Startup team!</title>
+        <meta name="description" content="My business is...">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- El favicon es la pequeña imagen que uno ve en los tabs de los browsers -->
+        <link rel="shortcut icon" href="/favicon.png">
+
+        <!-- Aca importamos nuestros estilos -->
+        <link rel="stylesheet" href="css/normalize.css">  
+        <link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Google web fonts es una excelente herramienta para utilizar diferentes tipografias sin tenerlas en "fisico".-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> 
+
+        <!-- En many cases we can use JS plugins instead of working on new code. Important advise for beginners-->
+        <script src="js/responsive-nav.js"></script>     
+	</head>
+	<body>
+		<!-- Our navigation vbar. using responsive-nav plugin-->
+		<nav class="nav-collapse">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>       
+
+        <div  id="sections" class="sec1">
+	        <div id="pattern">	
+	        	<div class="container group text-center">
+	        		<h1 class="white">My Badass Startup!</h1>
+	        		<hr>
+	        		<h2 class="white"> I don't wanna brag but...we are kinda awesome.</h2>
+	        	</div>
+                
+	        	<div class="container group text-center">
+	        		<br>
+                    
+					<div class="col one">
+						<img class="centered" src="img/tv.png">
+						<p class="white"><strong>We watch a lot of TV.</strong></p>
+					</div>
+                    
+					<div class="col one">
+						<img class="centered" src="img/food.png">
+						<p class="white"><strong>We eat food.</strong></p>
+					</div>
+                    
+					<div class="col one">
+						<img class="centered" src="img/money.png">
+						<p class="white"><strong>We like money.</strong></p>
+					</div>
+				</div>
+                
+			</div>
+        </div>
+
+        <div  id="sections" class="sec2">
+        	<div class="container group text-center">
+        		<h1>The Team</h1>
+        		<hr>
+        		<h2> Da awesome people.</h2>
+        	</div>
+            
+        	<div class="container group text-center">
+        		<br>
+				<div class="col one offset1">
+					<img class="centered" src="img/bender.png">
+					<p><em>I'll make my own Startup. With blackjack and hookers!</em></pwhite>
+				</div>
+			</div>
+            
+        </div>
+        
+        <div  id="sections" class="sec3">
+        	<div id="pattern">
+        		<div class="container text-center">
+        			<h2>Contact Us</h2>
+        		</div>
+                
+	        	<div class="group layer">
+	        		<form action="#" method="get">
+		        		<div class="container group text-center">
+		        			<div class="col one">
+		        				<input type="text" name="name" placeholder="Your name">
+		        				<input type="email" name="email" placeholder="Your email">
+		        			</div>
+		        			<div class="col one" >
+		        				<textarea placeholder="What do you want to say to us?" name="msg"></textarea>
+		        			</div>
+		        			<div class="col one">
+		        				<button>SEND EMAIL</button>
+		        			</div>
+		        		</div>
+	        		</form>        		
+	        	</div>
+                
+			</div>
+        </div>
+        <footer>bootcamp - Introducción a HTML5 y CSS3<br>
+        <a href="http://facebook.com/acmuniandes">acm uniandes</a>   -   <a href="http://facebook.com/comunidadget.com">GET</a><br>
+        universidad de los andes, bogotÁ - colombia</footer>
+	</body>
+	<!-- Adding JQuery-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Required for Responsive-nav plugin to work properly -->
+        <script>
+		  var navigation = responsiveNav(".nav-collapse", {
+			animate: true,        // Boolean: Use CSS3 transitions, true or false
+			transition: 200,      // Integer: Speed of the transition, in milliseconds
+			label: "",        // String: Label for the navigation toggle
+			insert: "after",      // String: Insert the toggle before or after the navigation
+			customToggle: "",     // Selector: Specify the ID of a custom toggle
+			openPos: "relative",  // String: Position of the opened nav, relative or static
+			jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+			init: function(){},   // Function: Init callback
+			open: function(){},   // Function: Open callback
+			close: function(){}   // Function: Close callback
+		  });
+		</script>
+</html>
